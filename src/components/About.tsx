@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import profilePlaceholder from "@/assets/profile-placeholder.jpg";
+import profilePlaceholder from "@/assets/myimage3.jpeg";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,7 +41,7 @@ const About = () => {
             <img
               src={profilePlaceholder}
               alt="Profile"
-              className="rounded-2xl shadow-elegant w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300"
+              className="rounded-2xl h-96  shadow-elegant w-fit max-w-md mx-auto hover:scale-105 transition-transform duration-300"
             />
           </div>
 

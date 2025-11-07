@@ -25,32 +25,40 @@ const Experience = () => {
   const experiences = [
     {
       type: "work",
-      title: "Senior Full-Stack Developer",
-      organization: "Tech Company Inc.",
-      period: "2022 - Present",
-      description: "Leading development of scalable web applications and mentoring junior developers.",
+      title: "Full-Stack Developer Intern",
+      organization: "Fabs Infotech, Dubai",
+      period: "6 Months Internship",
+      description: "Developed and enhanced web applications using modern technologies. Collaborated with the development team to build scalable solutions while gaining hands-on experience in both frontend and backend systems.",
     },
     {
       type: "work",
-      title: "Full-Stack Developer",
-      organization: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client projects using React and Node.js.",
+      title: "Full-Stack Developer (Academic Projects)",
+      organization: "Freelance / College Projects",
+      period: "2024 - 2026",
+      description: "Designed and developed several academic and personal projects using Django (Python) and the MERN stack (MongoDB, Express.js, React.js, Node.js). Focused on building responsive UI, REST APIs, and database-driven features.",
     },
     {
       type: "education",
-      title: "Bachelor of Computer Science",
-      organization: "University Name",
-      period: "2016 - 2020",
-      description: "Graduated with honors, specializing in software engineering and web development.",
+      title: "Master of Computer Applications (MCA)",
+      organization: "Jamal Mohamed College, Tiruchirappalli",
+      period: "2024 – Present",
+      description: "Pursuing MCA with a strong focus on advanced software development, web technologies, database management, and modern application architecture. Actively working on real-world projects and expanding expertise in full-stack development.",
     },
     {
-      type: "work",
-      title: "Junior Developer",
-      organization: "Startup Ventures",
-      period: "2019 - 2020",
-      description: "Contributed to frontend development and learned industry best practices.",
+      type: "education",
+      title: "Bachelor of Computer Applications (BCA)",
+      organization: "Jamal Mohamed College, Tiruchirappalli",
+      period: "2021 – 2024",
+      description: "Completed BCA with solid foundation in computer science concepts, programming, data structures, and web development. Engaged in academic and personal projects contributing to practical learning and technical growth.",
     },
+
+    // {
+    //   type: "work",
+    //   title: "Junior Developer",
+    //   organization: "Startup Ventures",
+    //   period: "2019 - 2020",
+    //   description: "Contributed to frontend development and learned industry best practices.",
+    // },
   ];
 
   return (

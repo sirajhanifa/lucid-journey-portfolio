@@ -5,6 +5,8 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import ResumeDownload from "./ResumeDownload";
+
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -37,24 +39,24 @@ const Contact = () => {
   }, []);
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/sirajhanifa", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mohamedhanifa123/", label: "LinkedIn" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+    { icon: Mail, href: "mailto:sirajhanifa786@gmail.com", label: "Email" },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     try {
       contactSchema.parse(formData);
       setErrors({});
-      
+
       toast({
         title: "Message sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
-      
+
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -118,7 +120,7 @@ const Contact = () => {
 
           <div className={`mt-12 ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
             <p className="text-center text-muted-foreground mb-6">Or connect with me on</p>
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-6 mb-8">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
@@ -135,7 +137,11 @@ const Contact = () => {
                 );
               })}
             </div>
+
+            {/* ✅ Download Resume Button Here */}
+            <ResumeDownload />
           </div>
+
         </div>
       </div>
     </section>

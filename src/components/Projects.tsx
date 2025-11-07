@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
-
+import fameease from "../assets/fameease.png";
+import claim from "../assets/claim.png";
+import obe from "../assets/obe.jpeg"
+import schlr from "../assets/schlr.jpeg"
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -25,36 +28,36 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "FameEase",
       description: "A full-stack e-commerce solution with payment integration, inventory management, and real-time updates.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "https://github.com/sirajhanifa/Claim_client",
+      demo: "https://family-client-theta.vercel.app/",
+      image: fameease,
     },
     {
-      title: "Task Management App",
+      title: "Claim Management System",
       description: "Collaborative task management tool with real-time synchronization and team features.",
       technologies: ["React", "Firebase", "Tailwind CSS"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
+      github: "https://github.com/sirajhanifa/Claim_client",
+      demo: "https://github.com/sirajhanifa/Claim_client",
+      image: claim,
     },
     {
-      title: "AI Chat Application",
+      title: "Outcome Based Education - OBE",
       description: "Modern chat application with AI-powered responses and natural language processing.",
       technologies: ["Next.js", "OpenAI API", "TypeScript"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+      github: "https://github.com/MohamedJainulHaneef/obe_client_repo",
+      demo: "https://github.com/MohamedJainulHaneef/obe_client_repo",
+      image: obe,
     },
     {
-      title: "Analytics Dashboard",
+      title: "Scholarship Managment Portal",
       description: "Comprehensive analytics platform with interactive charts and real-time data visualization.",
       technologies: ["React", "D3.js", "Express", "MongoDB"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      github: "https://github.com/JoshwaThomas/sclr_client",
+      demo: "https://github.com/JoshwaThomas/sclr_client",
+      image: schlr,
     },
   ];
 

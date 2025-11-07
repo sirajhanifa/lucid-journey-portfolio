@@ -26,7 +26,7 @@ const Skills = () => {
     {
       icon: Code,
       title: "Frontend Development",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+      technologies: ["HTML5","CSS3","JavaScript","React.js",  "Tailwind CSS",],
     },
     {
       icon: Server,
@@ -46,13 +46,13 @@ const Skills = () => {
     {
       icon: Globe,
       title: "DevOps & Cloud",
-      technologies: ["Docker", "AWS", "GitHub Actions", "Vercel"],
+      technologies: ["GitHub Actions", "Vercel"],
     },
-    {
-      icon: Smartphone,
-      title: "Mobile Development",
-      technologies: ["React Native", "Progressive Web Apps", "Mobile-First"],
-    },
+    // {
+    //   icon: Smartphone,
+    //   title: "Mobile Development",
+    //   technologies: ["React Native", "Progressive Web Apps", "Mobile-First"],
+    // },
   ];
 
   return (
